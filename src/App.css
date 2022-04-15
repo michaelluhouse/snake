@@ -1,4 +1,69 @@
-.App {
+/* *{ */
+  /* margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+#root{
+  width: 720px;
+  height: 840px;
+  background-color: #b7d4a8;
+  margin: 60px auto;
+  border: 10px solid black;
+  border-radius: 40px;
+  font: bold 20px "Courier";
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.stage{
+  width: 600px;
+  height: 700px;
+  border: 2px solid black;
+  position: relative;
+}
+
+.snake div{
+  width:10px;
+  height: 10px;
+  background-color: #000;
+  border: 1px solid #b7d4a8;
+  position: absolute;
+}
+
+.food{
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 40px;
+  top: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.food div{
+    width: 4px;
+    height: 4px;
+    background-color: black;
+    transform: rotate(45deg);
+  }
+
+.score-panel{
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  
+} */
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +100,66 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+#root{
+  width: 720px;
+  height: 840px;
+  background-color: #b7d4a8;
+  margin: 60px auto;
+  border: 10px solid black;
+  border-radius: 40px;
+  font: bold 20px "Courier";
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+#stage{
+  width: 600px;
+  height: 700px;
+  border: 2px solid black;
+  position: relative;
+}
+
+#snake div{
+  width:10px;
+  height: 10px;
+  background-color: #000;
+  border: 1px solid #b7d4a8;
+  position: absolute;
+}
+
+#food{
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 40px;
+  top: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+#food div{
+    width: 4px;
+    height: 4px;
+    background-color: black;
+    transform: rotate(45deg);
+  }
+
+#score-panel{
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
 }

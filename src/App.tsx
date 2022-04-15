@@ -1,24 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
 import './App.css';
+import GameControl from './modules/GameControl';
 
 function App() {
+
+  useEffect(() => {
+    const gameControl = new GameControl();
+    gameControl.food.change();
+    setInterval(()=>{
+      // console.log(gameControl.direction)
+    }, 1000)
+  }, [])
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div id="stage">
+        <div id="snake">
+          <div></div>
+        </div>
+        <div id="food">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div id="score-panel">
+        <div>
+          SCORE: <span id="score">0</span>
+        </div>
+        <div>
+          LEVEL: <span id="level">1</span>
+        </div>
+      </div>
     </div>
   );
 }
